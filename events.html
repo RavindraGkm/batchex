@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="user_name"/>
+            </div>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="user_name_copy"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <select class="form-control" id="dir_list">
+                    <option value="">Select Director</option>
+                    <option value="1">First</option>
+                    <option value="2">Second</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <input type="checkbox" class="languages" data-name="java"/> Java
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 check-lists">
+                <div class="template">
+                    <input type="checkbox" data-name="sample-name"/><label>Sample</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/proto.js"></script>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        object.initialization();
+    });
+</script>

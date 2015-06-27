@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+<form id="user_form" class="form-horizontal" action="#">
+    <div class="form-body">
+        <div class="form-group">
+            <label class="col-md-3 control-label">User Name</label>
+            <div class="col-md-5">
+                <input class="form-control" name="user_name" id="din_number" placeholder="Enter DIN"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">User Age</label>
+            <div class="col-md-5">
+                <input class="form-control" name="user_age" id="" placeholder="Enter DIN"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-5 col-md-offset-3">
+                <button type="submit" class="btn btn-info">Save Info</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+</html>
+<script type="text/javascript">
+    $("#user_form").validate({
+        rules: {
+            user_name: {
+                required: true
+            },
+            user_age: {
+                required: true,
+                number:true
+            }
+        },
+        messages: {
+            user_name: {
+                required: "Please enter user name"
+            },
+            user_age: {
+                required: "Please enter age",
+                number:"Enter digits only"
+            }
+        },
+        invalidHandler: function (event, validator) {
+        },
+        highlight: function (element) {
+            $(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function (element) {
+            $(element).closest('.form-group').removeClass('has-error');
+        },
+        success: function (label) {
+            label.closest('.form-group').removeClass('has-error');
+        },
+        submitHandler: function (form) {
+            alert("Form submitted");
+        }
+    });
+</script>

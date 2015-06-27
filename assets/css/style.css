@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Hemlata';
+    src: url('../fonts/lucida.woff');
+}
+.frf {
+    width: 50%;
+    float: left;
+    height: 100px;
+    background-color: #99C8C8;
+}
+.frs {
+    width: 50%;
+    float: left;
+    height: 100px;
+    color: #FFF;
+    font-size: 40px;
+    background-color: #787878;
+}
+
+.x {
+    background-color: #245269;
+}
+
+.xx {
+    background-color: #2b542c;
+}
+
+.xxx {
+    background-color: #ec971f;
+}
+
+.my-input {
+    font-family: 'Hemlata';
+    font-size: 30px;
+}
+
+.main-nav {
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-nav > li {
+    position: relative;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Hemlata';
+    display: inline-block;
+    border: 1px solid #222222;
+    white-space: nowrap;
+    line-height: 30px;
+    font-family: 'Hemlata';
+}
+
+.main-nav > li:hover .sub-nav {
+    display: block;
+}
+
+.sub-nav {
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    list-style-type: none;
+}
+
+.sub-nav > li  {
+    border: 1px solid #222222;
+    white-space: nowrap;
+    line-height: 30px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Hemlata';
+}
+
+.con {
+    background-color: tan;
+    overflow: auto;
+}
+
+
+.con-h1 {
+    color:#FFF;
+    background-color: darkred;
+    margin-top: 10px;
+}
+
+.navbar-inverse {
+    background-color: #DDDDDD;
+    border-color: #f2f2f2;
+}

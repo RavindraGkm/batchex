@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="assets/css/bootstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="student_info table table-bordered">
+                <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Address</th>
+                </tr>
+                <tr>
+                    <th>Street</th><th>House No.</th>
+                </tr>
+                </thead>
+                <tbody class="st_table">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" id="user_id" class="form-control "/>
+            <button id="clck" class="btn btn-primary">Click Me</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#clck").click(function() {
+            $.ajax({
+                url: "ajax.php",
+                type: "GET",
+                dataType: "JSON",
+                data: {
+                    user_id: $("#user_id").val()
+                },
+                success: function (data) {
+                    $(".st_table").append("<tr><td>"+data.name+"</td><td>"+data.address.street+"</td><td>"+data.address.house_no+"</td></tr>");
+                }
+            });
+        });
+    });
+</script>

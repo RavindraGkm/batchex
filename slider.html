@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="assets/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/demo.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wmuGallery example4">
+                    <div class="wmuSlider">
+                        <div class="wmuSliderWrapper">
+                            <article>
+                                <img width="75" height="75" src="http://farm7.static.flickr.com/6052/6279000273_218313c876_s.jpg" data-src-full="http://farm7.static.flickr.com/6052/6279000273_218313c876.jpg" />
+                            </article>
+                            <article>
+                                <img width="75" height="75" src="http://farm7.static.flickr.com/6104/6271856202_1e3ccb3deb_s.jpg" data-src-full="http://farm7.static.flickr.com/6104/6271856202_1e3ccb3deb.jpg" />
+                            </article>
+
+                            <article>
+                                <img width="75" height="75" src="http://farm7.static.flickr.com/6053/6268322528_818ab33f7f_s.jpg" data-src-full="http://farm7.static.flickr.com/6053/6268322528_818ab33f7f.jpg" />
+                            </article>
+
+                            <article>
+                                <img width="75" height="75" src="http://farm7.static.flickr.com/6232/6239597762_15491d4c97_s.jpg" data-src-full="http://farm7.static.flickr.com/6232/6239597762_15491d4c97.jpg" />
+                            </article>
+
+                            <article>
+                                <img width="75" height="75" src="http://farm7.static.flickr.com/6057/6224753006_9fb962d890_s.jpg" data-src-full="http://farm7.static.flickr.com/6057/6224753006_9fb962d890.jpg" />
+                            </article>
+
+                            <article>
+                                <img width="75" height="75" src="http://farm7.static.flickr.com/6036/6213397745_1d8f223e93_s.jpg" data-src-full="http://farm7.static.flickr.com/6036/6213397745_1d8f223e93.jpg" />
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wmuSlider example3">
+
+                    <div class="wmuSliderWrapper">
+                        <article>
+                            <img src="http://farm7.static.flickr.com/6052/6279000273_218313c876.jpg" />
+                        </article>
+
+                        <article>
+                            <img src="http://farm7.static.flickr.com/6104/6271856202_1e3ccb3deb.jpg" />
+                        </article>
+
+                        <article>
+                            <img src="http://farm7.static.flickr.com/6053/6268322528_818ab33f7f.jpg" />
+                        </article>
+
+                        <article>
+                            <img src="http://farm7.static.flickr.com/6232/6239597762_15491d4c97.jpg" />
+                        </article>
+
+                        <article>
+                            <img src="http://farm7.static.flickr.com/6057/6224753006_9fb962d890.jpg" />
+                        </article>
+
+                        <article>
+                            <img src="http://farm7.static.flickr.com/6036/6213397745_1d8f223e93.jpg" />
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.min.js"></script>
+<script src="assets/js/jquery.wmuSlider.js"></script>
+<script src="assets/js/jquery.wmuGallery.js"></script>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //$('.example4').wmuGallery();
+
+        $('.example3').wmuSlider({
+            touch: Modernizr.touch,
+            animation: 'slide',
+            items: 2
+        });
+    });
+</script>
